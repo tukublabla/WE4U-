@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;500&display=swap">
+    <style>
+        
+        .actions {
+            display: flex; 
+            align-items: center; 
+            margin-top: 10px;
+        }
+
+        .actions input[type="checkbox"] {
+            margin-right: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flip-container">
+            <div class="flip-content">
+
+                <div class="right-side login-side">
+                    <div class="login-form">
+                        <h1>Log In</h1>
+                        <p>Enter Credentials to Proceed</p>
+                        
+                        <form id="loginForm"> 
+                            <div class="input-group">
+                                <label for="loginUsername">Username</label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="loginUsername" name="username" placeholder="Username" required>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="loginPassword">Password</label>
+                                <div class="input-wrapper">
+                                    <input type="password" id="loginPassword" name="password" placeholder="Password" required>
+                                </div>
+                            </div>
+                            
+                            <button type="button" id="loginButton">Log In</button> 
+                            <div class="or">
+                                <hr> <p>Or</p> <hr>
+                            </div>
+                            <p>Don't have an account? <a href="#" class="flip-toggle">Sign Up!</a></p>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="right-side sign-up-side">
+                    <div class="sign-up-form">
+                        <h2>Sign Up</h2>
+                        <p>Enter Your Details to Create an Account</p>
+                        <form id="registerForm">
+                            <div class="input-group">
+                                <label for="username">Username</label>
+                                <input type="text" id="username" name="username" placeholder="Username" required>
+                                <small id="usernameError" class="error-message"></small>
+                            </div>
+                            <div class="input-group">
+                                <label for="email">E-mail Address</label>
+                                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                                <small id="emailError" class="error-message"></small>
+                            </div>
+                            <div class="input-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" placeholder="Password" required>
+                                <small id="passwordError" class="error-message"></small>
+                            </div>
+                            <div class="input-group">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                                <small id="confirmPasswordError" class="error-message"></small>
+                            </div>
+                        
+                            <button type="submit">Sign Up</button>
+                            <div class="or">
+                                <hr> <p>Or</p> <hr>
+                            </div>
+                        
+                            <p>Already have an account? <a href="#" class="flip-toggle">Log In!</a></p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="flip.js"></script>
+    <script src="loginScript.js"></script>
+    <script>
+  
+        const loginButton = document.getElementById('loginButton');
+
+        loginButton.addEventListener('click', function() {
+            const username = document.getElementById('loginUsername').value;
+            const password = document.getElementById('loginPassword').value;
+
+           
+            if (username && password) { 
+               
+                window.location.href = "home.html"; 
+            } else {
+                alert('Please enter both username and password.'); 
+            }
+        });
+    </script>
+</body>
+</html>

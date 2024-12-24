@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #68ba7f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white
+    ;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff577f;
+}
+
+.contact-btn {
+    background-color: #ff577f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.counseling-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9f5e9; 
+    padding-top: 80px; 
+    padding-bottom: 30px; 
+}
+
+.counseling-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.counseling-text {
+    width: 48%;  
+    text-align: left;
+    position: relative;
+    margin-right: 10px; 
+}
+
+.counseling-text h1 {
+    font-size: 42px;
+    color: #333;
+    margin-top: 10px; 
+}
+
+.counseling-text p {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #555;
+}
+
+.counseling-image {
+    width: 550px; 
+    height: 350px; 
+    object-fit: cover;
+    margin-bottom: 10px; 
+}
+
+.email-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.email-input input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.get-started-btn {
+    background-color: #ff577f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #ff2e5d;
+}
+
+.appointment-form {
+    width: 45%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-left: 15px;
+}
+
+.appointment-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.appointment-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.submit-btn {
+    background-color: #ff577f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ff2e5d;
+}

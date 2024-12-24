@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 𖠿 We4U </title>
+    <link rel="stylesheet" href="counselingStyles.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">𖠿 We4U</div>
+        <ul>
+            <li><a href="home.html#home">Home</a></li> 
+            <li><a href="about.html#about">About</a></li> 
+            <li><a href="services.html#services">Services</a></li> 
+            <li><a href="counseling.html#counseling">Counseling</a></li>
+            <li><a href="blogs.html#blog">Blogs</a></li> 
+            <li><a href="quiz.html#quiz">Quiz</a></li> 
+        </ul>
+        <button class="contact-btn">Contact Us</button>
+    </nav>
+  
+    <section id="counseling" class="counseling-section">
+        <div class="counseling-content">
+            <div class="counseling-text">
+             
+                <img src="img/counseling.jpg" alt="Counseling Image" class="counseling-image">
+                <h1>Join Our Counseling</h1>
+                <p>Step into a tailored growth journey designed to help you reach your highest potential.</p>
+                <div class="email-input">
+                    <input type="email" placeholder="Your email">
+                    <button class="get-started-btn">Get Started</button>
+                </div>
+            </div>
+            <div class="appointment-form">
+                <h2>Add Appointment</h2>
+                <form>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Your Name">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" value="2024-12-15">
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" value="17:00">
+                        </div>
+                    </div>
+
+                    <label for="medium">Medium</label>
+                    <select id="medium">
+                        <option value="individual">Individual</option>
+                        <option value="group">Group</option>
+                    </select>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" placeholder="Share your feelings"></textarea>
+
+                    <button type="submit" class="submit-btn">Book Appointment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="counselingScript.js"></script>
+</body>
+</html>
